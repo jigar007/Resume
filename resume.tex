@@ -1,0 +1,208 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item{
+    { #1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithColon}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectInfo}[3]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small\textbf{Project:}\small{#1} \\
+      \small\textbf{Monthly Active Users:}\small{#2} \\
+      \small\textbf{Frameworks:}\small{#3} \\
+    \end{tabular*}
+    \vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://sourabhbajaj.com/}{\Large Jigar Thakkar}} & Location : \href{mailto:sourabh@sourabhbajaj.com}{Sydney, Australia}\\
+  \href{http://sourabhbajaj.com/}{iJigarThakkar@gmail.com} & Mobile : +61 406 101 797 \\
+\end{tabular*}
+
+
+%-----------Summary-----------------
+\section{Summary}
+{Experienced iOS developer with 5 years of experience across various industries, including startups, government, retail, and banking.}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Melbourne}{Melbourne, Australia}
+      {Masters of Informational Technology}{Feb 2016 -- Feb 2018}
+      \resumeItemListStart
+      \resumeItemListEnd
+    \resumeSubheading
+      {Gujarat Technological University}{Ahmedabad, India}
+      {Bachelor of Engineering in Information Technology}{Jun 2011 -- Jun 2015}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Macquarie Bank}{Sydney, Australia}
+      {Senior iOS Engineer - Contract with Hudson}{Jan 2023 - Present}
+      \resumeItemListStart
+         \resumeItem{Playing a key role in developing the critical Cash flow tracker in-app widget for one of the largest digital-only bank in Australia with \textbf{500,000+ monthly active users}}
+         \resumeItem{Working iOS projects with over \textbf{410,000 lines of code}, utilizing Xcode to organize multiple smaller projects that compile to frameworks.}
+         \resumeItem{AppStore Link: \url{https://apps.apple.com/au/app/macquarie-mobile-banking/id942349750}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Coles Group}{Melbourne, Australia}
+      {Senior iOS Engineer - Contract with Talent International}{Jun 2022 - Dec 2022}
+      \resumeItemListStart
+        \resumeItem {Delivered new product categories and implemented an improved version of the home page designs for Australia's second-largest grocery ordering application in time for the Christmas season, serving over \textbf{50K daily active users}}
+        \resumeItem {Implemented universal links to seamlessly integrate the app and website, improving user experience and driving engagement}
+        \resumeItem{Extensively leveraged the latest declarative and functional reactive programming principles by using Combine and AsyncSequence for networking and user event processing}
+        \resumeItem {Successfully implemented new product categories such as liquor and tobacco, which required unique legal compliance requirements for viewing and ordering, including age and identity verification}
+        \resumeItem {Ensured existing features are accessible for all users by making them compliant with dynamic type and voice-over technologies, improving usability and user experience}
+        \resumeItem{AppStore Link: \url{https://apps.apple.com/au/app/coles/id529118855}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Two Bulls -- Service Victoria}{Melbourne, Australia}
+      {iOS Developer - Contract with Talent International}{Oct 2021 -- Jun 2022}
+      \resumeItemListStart
+        \resumeItem{Delivered time-sensitive critical features related to COVID-19, such as QR code signing and vaccination certificates, which were used by over \textbf{800K daily active users}}
+        \resumeItem{Worked on a complex and large codebase with over 80K lines, utilizing a diverse range of technologies and architectural design patterns, where the entire user interface was programmatically created in UIKit}
+        \resumeItem{Implemented accessibility requirements to ensure the app can work responsively with large text sizes and VoiceOver}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Sunsuper -- Now Australianreti Rement Trust}{Brisbane, Australia}
+      {iOS Developer - Contract}{Jul 2021 -- Sep 2021}
+        \resumeItemListStart
+            \resumeItem{Successfully led the merger and rebranding of Sunsuper and QSuper application, ensuring seamless transition for 30K monthly active users without any impact on the user experience}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Kintell Pty Ltd -- Kintell.com}{Sydney, Australia}
+      {iOS Developer}{Jan 2019 -- Jun 2021}
+      \resumeItemListStart
+        \resumeItem{Led the development and launch of video and chat applications using Twilio and SwiftUI as the sole full-time iOS developer for a fast-paced startup}
+        \resumeItem{Collaborated closely with John Sundell, a well-known blogger and influencer in the iOS community, to maintain the quality and technical direction of the project}
+        \resumeItem{Leveraged cutting-edge technologies such as \textbf{SwiftUI and Combine} to build a robust and scalable solution that would last for years}
+        \resumeItem{Successfully integrated legacy UIKit components into a SwiftUI project using \textbf{UIViewControllerRepresentable} and \textbf{UIViewRepresentable} protocols}
+        \resumeItem{Integrated Twilio's Chat and Video SDK using the Swift Package Manager and single-handedly published the video conferencing and chat app to the App Store using the Twilio API}
+        \resumeItem{AppStore Link: \url{https://apps.apple.com/au/app/kintell/id1419104805}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Digital2Go}{Melbourne, Australia}
+      {iOS Developer - Contract}{Jun 2018 -- Dec 2018}
+      \resumeItemListStart
+        \resumeItem{Worked as a CocoaPods developer to distribute compiled versions of libraries to be used by third-party developers}
+        \resumeItem{Developed and contributed to a diverse range of applications, including those in the retail, cryptocurrency, banking, and location-based sectors}
+        \resumeItem{Integrated app with various social media and data-providing platforms including Facebook, Instagram, LinkedIn, Foursquare, and HealthKit}
+        \resumeItem{Implemented additional features to the IoT-based banking application of Banamex-Mexico (Part of Citibank group) using iBeacon technology, including survey popups that appear when the user leaves the bank}
+        \resumeItem{Implemented Crashlytics, Fabric (now Firebase), and TestFlight for test analysis and solving crash bugs in the production environment}
+        \resumeItem{Worked on an app for location-based advertisements using Core Location framework, utilizing the power of iBeacons and Geofences}
+        \resumeItem{Distributed application using Apple Developer Enterprise account to internal and external testers and other stakeholders}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------Skills-----------------
+\section{Skills}
+    \resumeItemListStart
+        \resumeItemWithColon{Programming Languages} 
+            {Proficient in Swift, with familiarity in Objective-C}
+        \resumeItemWithColon{UI Frameworks} 
+            {Experience working with traditional iOS UI development through Storyboards and Xibs, as well as new declarative UI frameworks such as SwiftUI}
+        \resumeItemWithColon{iOS Frameworks} 
+            {Experience with various iOS frameworks including CoreLocation, HealthKit}
+        \resumeItemWithColon{Asynchronous Programming} 
+            {EExperienced in implementing asynchronous programming concepts using various tools such as the Dispatch framework, OperationsQueue, and the new Swift async/await APIs}
+        \resumeItemWithColon{Functional Reactive Programming} 
+            {Experience in working with Combine, RxSwift, and ReactiveSwift}
+        \resumeItemWithColon{Testing} 
+            {Experience in writing unit tests using XCTest framework and UI tests with Applitools}
+        \resumeItemWithColon{Architectural Design Patterns} 
+            {Familiarity with common iOS design patterns such as MVC and MVVM}
+        \resumeItemWithColon{Version Control} 
+            {Experience with version control systems such as Git, as well as advanced Git commands such as cherry-pick and rebase}
+        \resumeItemWithColon{Dependency Management} 
+            {Experience with Cocoapods, Carthage, and Swift Package Manager}
+        \resumeItemWithColon{Agile Methodologies} 
+            {Experience with Agile development methodologies, specifically Scrum and Kanban} 
+    \resumeItemListEnd
+
+%-------------------------------------------
+\end{document}
